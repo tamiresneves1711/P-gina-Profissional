@@ -12,12 +12,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family:'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif;
             line-height: 1.6;
-            color:black;
+            color: black;
             background-color: rgba(9, 136, 221, 0.89);
         }
+
         /* container */
         .container {
             width: 80%;
@@ -25,7 +27,93 @@
             margin: 0 auto;
         }
 
-    
+
+
+
+
+        /* Cabeçalho */
+        header {
+            background-color: #282828;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header .logo {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            color: #dddddd;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        header nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Seção de Introdução */
+        #intro {
+            background: url('https://blog.gokursos.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-1200x800.jpg') no-repeat center center/cover;
+            color: #ebe8f8;
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        #intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ebe8f8;
+        }
+
+        #intro p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        #intro .btn {
+            background-color: #230de6;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+
+        #intro .btn:hover {
+            background-color: #e0584d;
+        }
+
+        /* seção sobre */
+        #sobre {
+            padding: 4rem 0;
+            background-color: rgb(165, 210, 228);
+        }
+
     </style>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -74,7 +162,7 @@
     </section>
 
     <!-- Seção Habilidades-->
-     <section id="skills">
+    <section id="skills">
         <div class="container">
             <h2>Minhas Habilidades</h2>
             <div class="skill-list">
@@ -91,20 +179,20 @@
                     </div>
                 </div>
                 <div class="skill"></div>
-                    <h3>CSS</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill"></div>
-                    <h3>HTML</h3>
-                    <div class="progress">
-                        <div class="progress-bar" style="width: 95%;"></div>
-                    </div>
+                <h3>CSS</h3>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
                 </div>
             </div>
+            <div class="skill"></div>
+            <h3>HTML</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width: 95%;"></div>
+            </div>
         </div>
-        
+        </div>
+        </div>
+
     </section>
 
     <!--seção Portfólio-->
@@ -112,23 +200,24 @@
         <div class="container">
             <h2>Portfólio</h2>
             <div class="projects">
-                <div class="project"> 
-                    <img src="https://www.techlise.com.br/blog/wp-content/uploads/2021/08/download-1.jpg" 
-                    alt="Avanços tecnológicos ">    
-                    <h3>Avanços tecnológicos</h3> 
-                    <p>Descobertas de novas tecnologias</p>            
+                <div class="project">
+                    <img src="https://www.techlise.com.br/blog/wp-content/uploads/2021/08/download-1.jpg"
+                        alt="Avanços tecnológicos ">
+                    <h3>Avanços tecnológicos</h3>
+                    <p>Descobertas de novas tecnologias</p>
                 </div>
                 <div class="project">
-                    <img src="https://cdn.diferenca.com/imagens/conhecimento-empirico-cientifico-filosofico-e-teologico-og.jpg " 
-                    alt="Levando Conhecimento">
+                    <img src="https://cdn.diferenca.com/imagens/conhecimento-empirico-cientifico-filosofico-e-teologico-og.jpg "
+                        alt="Levando Conhecimento">
                     <h3>Levando Conhecimento</h3>
                     <p>Projeto criado para Empregabilidade</p>
                 </div>
                 <div class="project">
-                    <img src="https://thumbs.dreamstime.com/z/mulheres-que-andam-em-conjunto-45817549.jpg?ct=jpeg" 
-                    alt="Buscando Auto-Estima">
+                    <img src="https://thumbs.dreamstime.com/z/mulheres-que-andam-em-conjunto-45817549.jpg?ct=jpeg"
+                        alt="Buscando Auto-Estima">
                     <h3>Buscando Auto-Estima</h3>
-                    <p>Projeto criado para Mulheres que deseja elevar sua Auto-Estima através de curso na área da beleza</p>
+                    <p>Projeto criado para Mulheres que deseja elevar sua Auto-Estima através de curso na área da beleza
+                    </p>
                 </div>
             </div>
         </div>
