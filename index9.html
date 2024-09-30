@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 10; // tipo primitivo
+        let b = a; // b recebe o valor de a (10)
+
+        a = 20; // altera apenas a
+        console.log(a); // 20
+        console.log(b); // 10 (b continua sendo 10)
+
+        let obj1 = { nome: "Carlos" }; // tipo de referência
+        let obj2 = obj1; // obj2 referência o mesmo objeto que obj1
+
+        obj1.nome = "Ana"; // altera o nome dentro do objeto
+        console.log(obj1.nome); // "Ana"
+        console.log(obj2.nome); // "Ana" (obj2 também reflete a mundança)
+
+    </script>
+</body>
