@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widt=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function exemploVar() {
+            var mensagem = "Olá, mundo!";
+            if (true) {
+                var mensagem = "Dentro do bloco";
+                console.log(mensagem); // Saída: "Dentro do bloco"
+            }
+            console.log(mensagem); // Saída: "Dentro dp bloco"
+        }
+        exemploVar();
+    </script>
+</body>
